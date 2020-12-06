@@ -26,6 +26,7 @@ time, mark, audio, video {
   font-size:100%;
   vertical-align:baseline;
   background:transparent;
+  font-family: A-OTF Futo Min A101 Pr6N;
 }
 
 body {
@@ -138,14 +139,9 @@ PC：header：左側
 
 .header h1 a{
   font-size: 28px;
-  color: #029ae2;
+  color: #333333;
   margin: 0 0 0 34px;
   text-decoration: none;
-}
-
-.header h1 span{
-  font-size: 28px;
-  color: #30d0ed;
 }
 
 /* ================================================
@@ -165,7 +161,7 @@ PC：header：右側
   align-items: center;
   list-style: none;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .header li a{
@@ -180,7 +176,7 @@ PC：header：右側
   margin: 0 0 0 70px;
   width: 200px;
   height: 80px;
-  background-color: #30d0ed;
+  background-color: #8f8e8e;
   color: #ffffff;
   text-decoration: none;
 }
@@ -201,11 +197,12 @@ PC：main：メインイメージ
   justify-content: center;
   align-items: center;
   text-align: center;
+  object-fit: cover;
 }
 
 .main_image_txt {
   position: absolute;
-  top: 31%;
+  top: 41%;
 }
 
 .main_image_txt h2{
@@ -248,7 +245,7 @@ PC：main：ニュース：左側
 
 .news_tittle h3{
   font-size: 28px;
-  color: #029ae2;
+  color: #333333;
   padding: 10px 0 0 0;
 }
 
@@ -321,14 +318,14 @@ PC：main：サービス：タイトル
   display: flex;
   justify-content: center;
   font-size: 28px;
-  color: #029ae2;
+  color: #333333;
 }
 
 .service_tittle p{
   display: flex;
   justify-content: center;
   font-size: 13px;
-  color: #029ae2;
+  color: #333333;
   margin: 10px 0 0 0;
 }
 
@@ -337,10 +334,18 @@ PC：main：サービス：コンテンツ
 ================================================ */
 .service_details a{
   display: block;
-  background-color: #bddbe2;
   width: 300px;
-  height: 150px;
-  margin: 0 10px;
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.service_details p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  margin: 10px 0 0 0;
+  font-size: 16px;
 }
 
 .service_details{
@@ -359,7 +364,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #90d5e2;
+  background-color: #8f8e8e;
   width: 100%;
   height: 60px;
 }
@@ -398,20 +403,19 @@ header{
 
 .header_sp h1 a{
   font-size: 24px;
-  color: #029ae2;
+  color: #333333;
   margin: 0 0 0 0px;
   text-decoration: none;
-}
-
-.header_sp h1 span{
-  font-size: 24px;
-  color: #30d0ed;
 }
 
 .header_sp_right a{
   text-decoration: none;
   color: #333333;
   font-size: 20px;
+}
+
+.header_sp_right i{
+  font-family: A-OTF Futo Min A101 Pr6N;
 }
 
 .header{
@@ -482,7 +486,7 @@ SP：main：ニュース：タイトル
 
 .news_tittle_sp h3{
   font-size: 25px;
-  color: #029ae2;
+  color: #333333;
 }
 
 .news_tittle_sp p{
@@ -507,7 +511,7 @@ SP：main：ニュース：タイトル
 }
 
 /* ================================================
-SP：main：ニュース：右側
+SP：main：ニュース：上部
 ================================================ */
 .news_contents_sp{
   margin: 20px 0 0 0;
@@ -553,41 +557,61 @@ SP：main：サービス：タイトル
   margin: 30px 0 10px 0;
 }
 
+.service_tittle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .service_tittle h3{
   display: flex;
   justify-content: center;
   font-size: 25px;
-  color: #029ae2;
+  color: #333333;
 }
 
 .service_tittle p{
   display: flex;
   justify-content: center;
   font-size: 13px;
-  color: #029ae2;
-  margin: 10px 0 0 0;
+  color: #333333;
+  margin: 10px 0 0 10px;
 }
 
 /* ================================================
 SP：main：サービス：コンテンツ
 ================================================ */
+
+.service_details {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .service_details a{
   display: block;
-  background-color: #bddbe2;
-  width: 350px;
-  height: 130px;
-  margin: 15px 10px;
   box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  object-fit: cover;
+}
+
+.service_details p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  margin: 5px 0 40px 0;
+  font-size: 16px;
 }
 
 .service_details{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 0 30px 0;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
 }
-
 
 /* ================================================
 SP：fooder 
@@ -597,7 +621,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #90d5e2;
+  background-color: #8f8e8e;
   width: 100%;
   height: 60px;
 }
