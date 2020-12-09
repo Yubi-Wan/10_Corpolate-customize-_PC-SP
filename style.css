@@ -288,8 +288,19 @@ PC：main：ニュース：右側
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 110px;
+  width: 100px;
   height: 40px;
+}
+
+.news_details dt.label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8f8e8e;
+  color: #ffffff;
+  width: 80px;
+  height: 23px;
+  font-size: 10px;
 }
 
 .news_details span{
@@ -302,6 +313,7 @@ PC：main：ニュース：右側
   justify-content: flex-start;
   align-items: center;
   width: 800px;
+  padding: 0 0 0 20px;
 }
 
 /* ================================================
